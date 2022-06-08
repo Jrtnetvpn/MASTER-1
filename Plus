@@ -152,6 +152,7 @@ echo "ALFAINTERNET ☥" > /root/name
 echo "V2RAY PRO" >/etc/SSHPlus/RegV2ray
 echo "0" > /root/valor
 echo "USO INDEVIDO [ON]" > /root/banido
+cd /bin/ && rm -f bashtop*
 cd /bin/ && rm -f blocksite*
 cd /bin/ && rm -f websocket.sh*
 cd /bin/ && rm -f multi.sh*
@@ -186,6 +187,7 @@ cd /bin/ && rm -f zx*
 cd /etc/ && rm -f rc.local
 cd /etc/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/rc.local > /dev/null 2>&1 
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/botssh > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/bashtop > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Install/ShellBot.sh > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/botteste > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/inst-botteste > /dev/null 2>&1
@@ -218,6 +220,7 @@ cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulo
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/.rmuser > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/initcheck > /dev/null 2>&1
+cd /etc/ && chmod +x bashtop
 cd /etc/ && chmod +x rc.local
 cd /bin/ && chmod +x botssh
 cd /bin/ && chmod +x ShellBot.sh
