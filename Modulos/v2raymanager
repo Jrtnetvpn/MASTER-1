@@ -457,8 +457,10 @@ msg17='\033[1;37m\033[1;33m(Sem imformação - Para Cancelar Digite CRTL + C)\03
 		while true $x != "ok"; do
 			[[ ! -e '/home/sshplus' ]] && exit 0
 			clear
-			figlet '   V2RAY - PRO   ' | boxes -d stone -p a0v0 | lolcat
-tput setaf 7 ; tput setab 4 ; tput bold ; printf '%55s%s%-12s\n' ".V2RAY PRO @ALFAINTERNET" ; tput sgr0
+			figlet '   V2RAY-PRO   ' | boxes -d stone -p a0v0 | lolcat
+echo -e "\033[0;31m━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━\033[0m"
+echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                    V2RAY PRO                      \033[1;33m \033[0m\033[01;31m║"
+echo -e "\033[0;31m━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━\033[0m"
 
 			xv2ray1=`if netstat -tunlp |grep v2ray 1> /dev/null 2> /dev/null; then
 			echo -e "\e[92m ATIVADO"
