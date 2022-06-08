@@ -294,26 +294,15 @@ clear
 echo ""
 cd $HOME
   echo "clear" >>/root/.bashrc
-  echo 'killall menu > /dev/null 2>&1' >>/root/.bashrc
-  sed '/ALFA 1 / d' /root/.bashrc >/root/.bashrc.cp
-  sed '/echo/ d' /root/.bashrc.cp >/root/.bashrc
-  sed '/ejecutar/ d' /root/.bashrc >/root/.bashrc.cp
-  sed '/date/ d' /root/.bashrc.cp >/root/.bashrc
-  rm -f /root/.bashrc.cp
   echo 'DATE=$(date +"%d-%m-%y")' >>/root/.bashrc
   echo 'TIME=$(date +"%T")' >>/root/.bashrc
-  echo 'figlet -k ALFA 2 | lolcat' >>/root/.bashrc
-  echo 'echo -e ""' >>/root/.bashrc
-  echo 'bash /bin/ejecutar/echo-ram.sh' >>/root/.bashrc
-  echo 'echo -e " DATA DE INSTALAÇÃO : " $(cat < /bin/ejecutar/fecha)' >>/root/.bashrc
+  echo 'figlet -k SSH-PLUS | lolcat' >>/root/.bashrc
   echo 'echo -e " NOME DO SERVIDOR : $HOSTNAME"' >>/root/.bashrc
   echo 'echo -e " SERVIDOR LIGADO À : $(uptime -p)"' >>/root/.bashrc
-  echo 'echo -e " MEMÓRIA LIVRE: $(cat < /bin/ejecutar/raml)"' >>/root/.bashrc
   echo 'echo -e " DATA : $DATE"' >>/root/.bashrc
   echo 'echo -e " HORA : $TIME"' >>/root/.bashrc
-  echo 'echo -e ""' >>/root/.bashrc
-  echo 'echo -e " ALFAINTERNET"' >>.bashrc
-  echo 'echo -e "\033[1;31m DIGITE (menu) PARA ENTRAR\033[0m."' >>/root/.bashrc
+  echo 'echo -e "@ALFAINTERNET"' >>.bashrc
+  echo 'echo -e "\033[1;31m DIGITE ( menu ) PARA ENTRAR\033[0m."' >>/root/.bashrc
   echo 'echo -e ""' >>/root/.bashrc
 echo -e "        \033[1;33m • \033[1;32mINSTALACAO CONCLUIDA\033[1;33m • \033[0m"
 figlet "    ALFAINTERNET" | lolcat
