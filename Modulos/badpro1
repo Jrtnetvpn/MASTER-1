@@ -119,15 +119,15 @@ screen -dmS udpvpn /bin/badvpn-udpgw --listen-addr 127.0.0.1:7500 --max-clients 
 echo -e "\033[1;32mPORTA BADVPN PRO ATIVADO COM SUCESSO\033[1;33m"
 sleep 4
 echo "================================================"
- ;;
-     11)
+   ;;
+   11)
    badvpn
    ;;
    0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
-   sleep 2
-   clear
-   exit;
+   sleep 1
+   exit
+   else
    ;;
    *)
    echo -e "\n\033[1;31mOpcao invalida !\033[0m"
