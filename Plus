@@ -63,8 +63,8 @@ system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
 echo ""
 echo -e "\033[1;37m $system                          $date"
-echo -e "\033[1;31m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓                 ┃                  SCRIPT OFICIAL                  ┃                 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛                                                                                         ▒█▀▀▀█ ▒█▀▀▀█ ▒█░▒█ ▒█▀▀█ ▒█░░░ ▒█░▒█ ▒█▀▀▀█                         ░▀▀▀▄▄ ░▀▀▀▄▄ ▒█▀▀█ ▒█▄▄█ ▒█░░░ ▒█░▒█ ░▀▀▀▄▄                         ▒█▄▄▄█ ▒█▄▄▄█ ▒█░▒█ ▒█░░░ ▒█▄▄█ ░▀▄▄▀ ▒█▄▄▄█                                                                                              ============ Noob: @ALFAINTERNET ===========\033[0m"
-echo "SE VI MAIS LONGE DO QUE OUTROS, FOI POR ESTÁ DE PÉ SOBRE OMBROS DE GIGANTES" 
+figlet ' SSH-PLUS' | boxes -d stone -p a0v0 | lolcat
+echo " Noob: @ALFAINTERNET" 
 echo -e "\033[01;31m━═━═━═━═━═━═━═━━═━═━═━═━═━═━═━═━━═━═━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━━═━═━═━═━═━\033[0m"
 echo ""
 echo ""
