@@ -1,14 +1,13 @@
 #!/bin/bash
 #====================================================
-#	SCRIPT: ANDRE CRACKER
-#   DATA ATT:   03 de julho 2022
-#	DESENVOLVIDO POR:	CRAZY_VPN edit André
-#	CONTATO TELEGRAM:	http://t.me/carecagm
-#	CANAL TELEGRAM:	http://t.me/carecagm
+#	SCRIPT: ALFAINTERNET
+#   DATA ATT:   08 de julho 2022
+#	DESENVOLVIDO POR:	ALFAINTERNET
+#	CANAL TELEGRAM:	http://t.me/ALFAINTERNET
 #====================================================
 _lvk=$(wget -qO- https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Install/versao)
 IP=$(wget -qO- ipv4.icanhazip.com)
-IP2=$(wget -qO- http://whatismyip.akamai.com/)
+IP2=$(wget -qO- http://ipv4.icanhazip.com)
 [[ "$IP" != "$IP2" ]] && ipdovps="$IP2" || ipdovps="$IP"
 echo -e "$ipdovps" >/etc/IP
 lst=$1 && lst1=$2 && lst2=$3 && key1=$4 && key2=crz
@@ -38,7 +37,7 @@ echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
 _dir1='/bin'
 _dir2='/etc/SSHPlus'
 rm $_dir2/ShellBot.sh $_dir2/cabecalho $_dir2/open.py $_dir2/proxy.py $_dir2/wsproxy.py >/dev/null 2>&1
-_mdls=("addhost" "delhost" "alterarsenha" "criarusuario" "expcleaner" "mudardata" "remover" "criarteste" "verifbot" "droplimiter" "alterarlimite" "ajuda" "sshmonitor" "badvpn" "userbackup" "instsqd" "blockt" "otimizar" "menu" "speedtest" "v2ray" "v2raymanager" "banner" "senharoot" "reiniciarservicos" "reiniciarsistema" "attscript" "conexao" "delscript" "detalhes" "botssh" "infousers" "verifatt" "limiter" "uexpired" "cabecalho" "bot" "open.py" "proxy.py" "wsproxy.py" "trojan-go" "onlineapp" "swapmemory" "initbot" "blocksite" "fr" "multi" "websocket.sh" "tweaker" "webmin.sh" "trafegototal" "blockuser" "badpro" "badpro1" "painelv2ray" "ddos" "limit" "haveged" "rps_cpu" "tuning" "mtuning" "acksyshttpack" "ackclear" "apache2menu" ".uid" ".criar" ".rmuid" ".rmuser" "vnc_inst")
+_mdls=("addhost" "delhost" "alterarsenha" "criarusuario" "bashtop" "expcleaner" "mudardata" "remover" "criarteste" "verifbot" "droplimiter" "alterarlimite" "ajuda" "sshmonitor" "badvpn" "userbackup" "instsqd" "blockt" "otimizar" "menu" "speedtest" "banner" "senharoot" "reiniciarservicos" "reiniciarsistema" "attscript" "conexao" "delscript" "detalhes" "botssh" "infousers" "verifatt" "limiter" "uexpired" "cabecalho" "v2ray" "v2raymanager" "bot" "open.py" "proxy.py" "wsproxy.py" "trojan-go" "onlineapp" "swapmemory" "initbot" "blocksite" "fr" "multi" "websocket.sh" "tweaker" "webmin.sh" "trafegototal" "blockuser" "badpro" "badpro1" "painelv2ray" "ddos" "limit" "haveged" "rps_cpu" "tuning" "mtuning" "acksyshttpack" "ackclear" "apache2menu" ".uid" ".criar" ".rmuid" ".rmuser" "vnc_inst")
 for _arq in ${_mdls[@]}; do
 	[[ -e $_dir1/$_arq ]] && rm $_dir1/$_arq >/dev/null 2>&1
 	wget -c -P $_dir1 https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/$_arq
