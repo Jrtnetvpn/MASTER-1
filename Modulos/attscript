@@ -132,7 +132,7 @@ vrs2=$(sed -n '1 p' /tmp/att | sed -e 's/[^0-9]//ig')
 
     sleep 3
 
-    apt update -y && apt upgrade -y && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Plus && chmod 777 Plus && ./Plus > /dev/null 2>&1
+    wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Plus && chmod 777 Plus && ./Plus > /dev/null 2>&1
 
     chmod +x Plus
 
