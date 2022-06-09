@@ -316,7 +316,7 @@ echo -e ""
    ;;
    28)
    clear
-   painelv2ray
+   ban.sh
    ;;
    26)
    clear
