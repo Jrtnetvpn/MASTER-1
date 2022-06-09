@@ -464,8 +464,6 @@ echo ""
 cd $HOME
   system=$(cat /etc/issue.net)
 date=$(date '+%Y-%m-%d <> %H:%M:%S')
-echo -e "\033[1;37m $system                          $date"
-figlet "    ALFAINTERNET" | lolcat
   echo 'figlet -k SSH-PLUS | lolcat' >>/root/.bashrc
   echo 'echo -e " NOME DO SERVIDOR : $HOSTNAME"' >>/root/.bashrc
   echo 'echo -e " SERVIDOR LIGADO À : $(uptime -p)"' >>/root/.bashrc
