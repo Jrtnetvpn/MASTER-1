@@ -2,7 +2,9 @@
 fun_badvpn() {
     clear
     figlet 'BADVPN PRO' | boxes -d stone -p a0v0 | lolcat
-echo -e "\E[44;1;37m            GERENCIAR BADVPN-UDP (PRO)            \E[0m"
+echo -e "\033[0;31m╠━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━╣\033[0m"
+echo -e "\033[01;31m║\033[1;31m\033[5;34;47m                   BADVPN PRO                      \033[1;33m \033[0m\033[01;31m║"
+echo -e "\033[0;31m╠━═━═━═━━═━═━═━═━━═━═━═━═━═━═━═━═━═━═━═━━═━═━═━═━═━═━╣\033[0m"
     echo ""
     if ps x | grep -w udpvpn | grep -v grep 1>/dev/null 2>/dev/null; then
         echo -e "\033[1;33mPORTAS\033[1;37m: \033[1;32m$(netstat -nplt | grep 'badvpn-ud' | awk {'print $4'} | cut -d: -f2 | xargs)"
@@ -11,11 +13,11 @@ echo -e "\E[44;1;37m            GERENCIAR BADVPN-UDP (PRO)            \E[0m"
     fi
     var_sks1=$(ps x | grep "udpvpn"|grep -v grep > /dev/null && echo -e "\033[1;32m◉ " || echo -e "\033[1;31m○ ")
     echo ""
-    echo -e "\033[1;31m[\033[1;36m1\033[1;31m] \033[1;37m• \033[1;33mDESATIVAR BADVPN (PRO) $var_sks1 \033[0m"
-    echo -e "\033[1;31m[\033[1;36m2\033[1;31m] \033[1;37m• \033[1;33mABRIR MAIS PORTAS\033[0m"
-    echo -e "\033[1;31m[\033[1;36m0\033[1;31m] \033[1;37m• \033[1;33mVOLTAR\033[0m"
+    echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 01 •\033[1;34m]\033[1;37m ➩  \033[1;33mDESATIVAR BADVPN (PRO) \033[01;31m $var_sks1\033[0m"
+    echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 02 •\033[1;34m]\033[1;37m ➩  \033[1;33mABRIR MAIS PORTAS \033[0m"
+    echo -e "\033[01;31m║\033[1;31m\033[1;34m[\033[1;37m 00 •\033[1;34m]\033[1;37m ➩  \033[1;33mVOLTAR  \033[1;32m<\033[1;33m<\033[1;31m< \033[0m"
     echo ""
-    echo -ne "\033[1;32mO QUE DESEJA FAZER \033[1;33m?\033[1;37m "
+    echo -ne "\033[1;31m╰━━━━━━━━❪\033[1;32mESCOLHA OPÇÃO DESEJADA\033[1;33m\033[1;31m\033[1;37m : "
     read resposta
     if [[ "$resposta" = '1' ]]; then
         if ps x | grep -w udpvpn | grep -v grep 1>/dev/null 2>/dev/null; then
