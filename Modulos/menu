@@ -354,8 +354,8 @@ echo -e ""
    r)
    menu
    ;;
-   q)
-   menu3
+   v)
+   v2raymanager
    ;;
    0 | 00)
    echo -e "\033[1;31mSaindo...\033[0m"
