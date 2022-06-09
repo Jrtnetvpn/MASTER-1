@@ -1,7 +1,8 @@
 #!/bin/bash
 fun_badvpn() {
     clear
-    echo -e "\E[44;1;37m            MONITOR DE PORTAS BADVPN PRO            \E[0m"
+    figlet 'BADVPN PRO' | boxes -d stone -p a0v0 | lolcat
+echo -e "\E[44;1;37m            GERENCIAR BADVPN-UDP (PRO)            \E[0m"
     echo ""
     if ps x | grep -w udpvpn | grep -v grep 1>/dev/null 2>/dev/null; then
         echo -e "\033[1;33mPORTAS\033[1;37m: \033[1;32m$(netstat -nplt | grep 'badvpn-ud' | awk {'print $4'} | cut -d: -f2 | xargs)"
