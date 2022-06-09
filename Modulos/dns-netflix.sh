@@ -37,9 +37,9 @@ cmake /SSHPlus/badvpn-1.999.128 -DBUILD_NOTHING_BY_DEFAULT=1 -DBUILD_UDPGW=1
 make install
 badvpn-udpgw --listen-addr 127.0.0.1:7300 > /dev/nul &
 echo 'badvpn-udpgw --listen-addr 127.0.0.1:7300 > /dev/nul &' > /etc/rc.local
-#echo 'badvpn-udpgw --listen-addr 127.0.0.1:7200 > /dev/nul &' >> /etc/rc.local
+#echo 'badvpn-udpgw --listen-addr 127.0.0.1:7300 > /dev/nul &' >> /etc/rc.local
 cd /etc/SSHPlus/
 rm -f badvpn-1.999.128.tar.*
 rm -f install > /dev/nul
 echo "Finalizado"
-echo "Modulo BadUDP - ALFAINTERNET"
+echo "Modulo BadUDP - @ALFAINTERNET"
