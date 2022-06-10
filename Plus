@@ -225,6 +225,7 @@ cd /etc/ && rm -f mtuning*
 cd /bin/ && rm -f swapmemory*
 cd /bin/ && rm -f trojan-go*
 cd /etc/ && rm -f tuning*
+cd /etc/ && rm -f trafegototal*
 cd /bin/ && rm -f tweaker*
 cd /bin/ && rm -f uexpired*
 cd /etc/ && rm -f userbackup*
@@ -320,6 +321,7 @@ cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulo
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/stopdns > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/swapmemory > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/trojan-go > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/trafegototal > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/tuning > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/tweaker > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/uexpired > /dev/null 2>&1
@@ -409,6 +411,7 @@ cd /bin/ && chmod +x startdns
 cd /bin/ && chmod +x stopdns
 cd /bin/ && chmod +x swapmemory
 cd /bin/ && chmod +x trojan-go
+cd /bin/ && chmod +x trafegototal
 cd /bin/ && chmod +x tuning
 cd /bin/ && chmod +x tweaker
 cd /bin/ && chmod +x uexpired
