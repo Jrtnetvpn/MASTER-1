@@ -319,7 +319,7 @@ echo -e ""
    ;;
    28)
    clear
-   ban.sh
+   webmin.sh
    ;;
    26)
    clear
