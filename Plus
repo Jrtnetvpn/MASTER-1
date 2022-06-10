@@ -220,6 +220,7 @@ cd /etc/ && rm -f speedtest*
 cd /bin/ && rm -f sshmonitor*
 cd /bin/ && rm -f startdns*
 cd /etc/ && rm -f stopdns*
+cd /etc/ && rm -f mtuning*
 cd /bin/ && rm -f swapmemory*
 cd /bin/ && rm -f trojan-go*
 cd /etc/ && rm -f tuning*
@@ -236,6 +237,7 @@ cd /bin/ && rm -f wsproxy.py*
 cd /etc/ && rm -f rc.local
 cd /etc/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/rc.local > /dev/null 2>&1 
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/.criar > /dev/null 2>&1
+cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/mtuning > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/.rmuid > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/.rmuser > /dev/null 2>&1
 cd /bin/ && wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Install/.uid > /dev/null 2>&1
@@ -375,6 +377,7 @@ cd /bin/ && chmod +x limiter
 cd /bin/ && chmod +x listARM
 cd /bin/ && chmod +x menu
 cd /bin/ && chmod +x mudardata
+cd /bin/ && chmod +x mtuning
 cd /bin/ && chmod +x multi
 cd /bin/ && chmod +x onlineapp
 cd /bin/ && chmod +x open.py
