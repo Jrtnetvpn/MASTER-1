@@ -43,3 +43,7 @@ rm -f badvpn-1.999.128.tar.*
 rm -f install > /dev/nul
 echo "Finalizado"
 echo "Modulo BadUDP - @ALFAINTERNET"
+sleep 2
+clear
+menu
+}
