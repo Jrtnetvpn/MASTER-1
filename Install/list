@@ -1,13 +1,13 @@
 #!/bin/bash
 #====================================================
 #	SCRIPT: ALFAINTERNET
-#       DATA ATT:   08 de julho 2022
+#       DATA ATT:   10 de julho 2022
 #	DESENVOLVIDO POR:	ALFAINTERNET
 #	CANAL TELEGRAM:	http://t.me/ALFAINTERNET
 #====================================================
 _lvk=$(wget -qO- https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Install/versao)
 IP=$(wget -qO- ipv4.icanhazip.com)
-IP2=$(wget -qO- http://ipv4.icanhazip.com)
+IP2=$(wget -qO- ipv4.icanhazip.com)
 [[ "$IP" != "$IP2" ]] && ipdovps="$IP2" || ipdovps="$IP"
 echo -e "$ipdovps" >/etc/IP
 lst=$1 && lst1=$2 && lst2=$3 && key1=$4 && key2=crz
@@ -18,6 +18,7 @@ dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 	rm -rf $_Ink/list >/dev/null 2>&1 && cat /dev/null >~/.bash_history && history -c && exit 0
 }
 [[ ! -d /etc/SSHPlus ]] && mkdir /etc/SSHPlus
+[[ ! -d /etc/SSHPlus/v2ray ]] && mkdir /etc/SSHPlus/v2ray
 [[ ! -d /etc/SSHPlus/senha ]] && mkdir /etc/SSHPlus/senha
 [[ ! -e /etc/SSHPlus/Exp ]] && touch /etc/SSHPlus/Exp
 [[ ! -d /etc/SSHPlus/userteste ]] && mkdir /etc/SSHPlus/userteste
@@ -27,7 +28,9 @@ dpkg-reconfigure --frontend noninteractive tzdata >/dev/null 2>&1
 [[ ! -d /etc/bot/arquivos ]] && mkdir /etc/bot/arquivos
 [[ ! -d /etc/bot/revenda ]] && mkdir /etc/bot/revenda
 [[ ! -d /etc/bot/suspensos ]] && mkdir /etc/bot/suspensos
+[[ ! -d /etc/rec ]] && mkdir /etc/rec
 [[ ! -e /etc/bot/lista_ativos ]] && touch /etc/bot/lista_ativos
+[[ ! -e /etc/bot/lista_suspensos ]] && touch /etc/bot/lista_suspensos
 [[ ! -e /etc/bot/lista_suspensos ]] && touch /etc/bot/lista_suspensos
 echo -e 'by: @KIRITO_SSH' >/usr/lib/sshplus && cat /usr/lib/sshplus >$lst2/licence && cat /usr/lib/sshplus > /etc/SSHPlus/.tmp/crazy
 netstat -nplt | grep -w 'apache2' | grep -w '80' && sed -i "s/Listen 80/Listen 81/g" /etc/apache2/ports.conf && service apache2 restart
@@ -37,7 +40,7 @@ echo "PasswordAuthentication yes" >>/etc/ssh/sshd_config
 _dir1='/bin'
 _dir2='/etc/SSHPlus'
 rm $_dir2/ShellBot.sh $_dir2/cabecalho $_dir2/open.py $_dir2/proxy.py $_dir2/wsproxy.py >/dev/null 2>&1
-_mdls=(".criar" ".rmuid" ".rmuser" ".uid" "ackclear" "acksyshttpack" "addhost" "ajuda" "alterarlimite" "alterarsenha" "ddos" "mtuning" "antCrashARM.sh" "apache2menu" "attscript" "ban.sh" "Autobackup" "backup_mail.sh" "badpro" "badvpn" "badvpn-udpgw" "banner" "bashtop" "blocksite" "blockt" "blockuser" "bot" "botssh" "cabecalho" "celular.sh" "conexao" "criarteste" "criarusuario" "delhost" "delscript" "detalhes" "dns-netflix.sh" "dns-server" "droplimiter" "expcleaner" "fail2ban" "fr" "haveged" "infousers" "initbot" "inst-botteste" "instsqd" "limiter" "listARM" "menu" "mudardata" "multi" "onlineapp" "open.py" "otimizar" "painelv2ray" "prissh" "prnet.sh" "proxy.py" "reiniciarservicos" "reiniciarsistema" "remove-slow" "remover" "restartdns" "senharoot" "ShellBot.sh" "slow_dns" "slowdns" "slowdns-drop" "slowdns-info" "slowdns-socks" "slowdns-ssh" "slowdns-ssl" "speedtest" "sshmonitor" "startdns" "stopdns" "swapmemory" "trafegototal" "trojan-go" "tuning" "tweaker" "uexpired" "userbackup" "v2ray" "v2raymanager" "verifatt" "verifbot" "webmin.sh" "websocket.sh" "wsproxy.py")
+_mdls=(".criar" ".rmuid" ".rmuser" ".uid" "ackclear" "acksyshttpack" "addhost" "ajuda" "alterarlimite" "alterarsenha" "antCrashARM.sh" "apache2menu" "attscript" "Autobackup" "backup_mail.sh" "badpro" "badvpn" "badvpn-udpgw" "banner" "bashtop" "ddos" "blocksite" "blockt" "blockuser" "bot" "botssh" "cabecalho" "celular.sh" "conexao" "criarteste" "criarusuario" "delhost" "delscript" "detalhes" "dns-netflix.sh" "dns-server" "droplimiter" "expcleaner" "ban.sh" "fail2ban" "fr" "haveged" "infousers" "initbot" "inst-botteste" "instsqd" "limiter" "listARM" "menu" "mudardata" "multi" "onlineapp" "open.py" "otimizar" "painelv2ray" "prissh" "prnet.sh" "proxy.py" "reiniciarservicos" "reiniciarsistema" "remove-slow" "remover" "restartdns" "senharoot" "ShellBot.sh" "slow_dns" "slowdns" "slowdns-drop" "slowdns-info" "slowdns-socks" "slowdns-ssh" "slowdns-ssl" "speedtest" "sshmonitor" "startdns" "stopdns" "swapmemory" "trojan-go" "tuning" "tweaker" "uexpired" "userbackup" "verifatt" "verifbot" "v2raymanager" "webmin.sh" "websocket.sh" "wsproxy.py")
 for _arq in ${_mdls[@]}; do
 	[[ -e $_dir1/$_arq ]] && rm $_dir1/$_arq >/dev/null 2>&1
 	wget -c -P $_dir1 https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/Modulos/$_arq
