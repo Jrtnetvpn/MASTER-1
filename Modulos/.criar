@@ -1,6 +1,7 @@
 #!/bin/bash
-
-figlet   '  CHECKUSER' | boxes -d stone -p a0v0 | lolcat
+fun_.criar() {
+    clear
+    figlet   '  CHECKUSER' | boxes -d stone -p a0v0 | lolcat
 echo -e "\E[44;1;37m            GERENCIAR CHECKUSER            \E[0m"
     echo ""
     echo -e "\033[1;31m[\033[1;36m01\033[1;31m] \033[1;37m• \033[1;33mGERENCIAR CHECKUSER \033[0m"
@@ -14,12 +15,12 @@ echo -ne "\033[1;32mO QUE DESEJA FAZER \033[1;33m?\033[1;37m "; read i
 
       1)
          clear
-         chuser
+         initcheck
          ;;
 
       2)
          clear
-         initcheck
+         instcheck.sh
          ;;
 
       0)
