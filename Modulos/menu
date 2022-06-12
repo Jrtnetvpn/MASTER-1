@@ -546,7 +546,7 @@ case "$x" in
    fr
    ;;
    m)
-   .criar
+   initcheck
    ;;
    g)
    apt install nethogs -y
