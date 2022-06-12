@@ -16,8 +16,8 @@ pip3 install flask > /dev/null 2>&1
 rm /bin/chuser > /dev/null 2>&1
 sleep 5
 cd /bin || exit
-wget https://github.com/wellzin-blip/new2022/raw/master/Painel-V2022/chuser > /dev/null 2>&1
-wget https://github.com/wellzin-blip/new2022/raw/master/Painel-V2022/userscheck > /dev/null 2>&1
+wget https://raw.githubusercontent.com/KDUIVGUVIVIRT/F/main/Modulos/chuser > /dev/null 2>&1
+wget https://raw.githubusercontent.com/KDUIVGUVIVIRT/F/main/Modulos/userscheck > /dev/null 2>&1
 chmod 777 chuser > /dev/null 2>&1
 chmod 777 userscheck > /dev/null 2>&1
 clear
