@@ -1,5 +1,4 @@
 #!/bin/bash
-fun_.criar() {
     clear
     figlet   '  CHECKUSER' | boxes -d stone -p a0v0 | lolcat
 echo -e "\E[44;1;37m            GERENCIAR CHECKUSER            \E[0m"
