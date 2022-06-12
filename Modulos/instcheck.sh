@@ -27,7 +27,7 @@ echo -e 'By: @KIRITO_SSH' > /usr/lib/licence
 mkdir /usr/lib/checkuser > /dev/null 2>&1
 cd /usr/lib/checkuser || exit
 rm checkuser.py > /dev/null 2>&1
-wget https://github.com/wellzin-blip/new2022/raw/master/Painel-V2022/checkuser.py > /dev/null 2>&1
+wget https://raw.githubusercontent.com/KDUIVGUVIVIRT/F/main/Modulos/checkuser.py > /dev/null 2>&1
 chmod 777 checkuser.py > /dev/null 2>&1
 clear
 echo -e "        \033[1;33m • \033[1;32mINSTALAÇÃO CONCLUÍDA\033[1;33m • \033[0m"
