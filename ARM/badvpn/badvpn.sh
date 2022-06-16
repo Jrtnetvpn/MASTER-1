@@ -51,8 +51,8 @@ fun_udp1 () {
 	    inst_udp () {
 	        cd $HOME
 			apt-get install dos2unix -y
-            wget https://raw.githubusercontent.com//main/Modulos/badvpn-udpgw -o /dev/null
-			wget https://raw.githubusercontent.com//main/Modulos/antCrashARM.sh -o /dev/null
+            wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/ARM/badvpn/badvpn-udpgw -o /dev/null
+			wget https://raw.githubusercontent.com/AKBSIJSHSI/MASTER/main/ARM/badvpn/antCrashARM.sh -o /dev/null
 			dos2unix antCrashARM.sh
 			mv -f $HOME /antCrashARM.sh /bin/antCrashARM.sh
             mv -f $HOME/badvpn-udpgw /bin/badvpn-udpgw
