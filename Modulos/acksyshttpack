@@ -1,6 +1,6 @@
 #!/bin/bash
 ####################################<
-### "BY @ALFAINTERNET <<" ###
+### "BY @Jrtnetvpn <<" ###
 ####################################<
 user=$(whoami)
 if [ "$user" != "root" ]; then
